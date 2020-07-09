@@ -7,7 +7,7 @@
 //void	*ft_memset(void *str, int c, size_t n);
 //void	ft_bzero(void *str, size_t n);
 //void	*ft_memcpy(void *dest, const void *src, size_t n);
-void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
+//void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 //void	*ft_memmove(void *dest, const void *src, size_t n);
 //void	*ft_memchr(const void *str, int c, size_t n);
 //int	ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -27,26 +27,30 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 
 int main()
 {
-	char s1[50] = "		  -hol6a mamonazo";
-	char s2[50] = "hlla";
+	char s1[49] = "";
+	char s2[40] = "ty";
+
 	// ft_memset(s1 + 5, '*', 5);
 	// printf("%s\n", s1);
 
-	// ft_bzero(s1, 5);
-	// printf("%s", s1);
+	//printf("%s", bzero(s1, 5));
 	
-	//ft_memcpy(s2, s1, 7);
-	//printf("%s\n", s2);
+	// printf("%s\n", memcpy(s2, s1, 4));
+	// printf("%s\n", ft_memcpy(s2, s1, 4));
 
-	ft_memccpy(s2, s1, 'm', 8);
-	printf("%s\n", s2);
+	// memccpy(s1, s2, 'j', 9);
+	// printf("%s\n", s1);
+	// printf("%s\n", ft_memccpy(s1, s2, 'j', 9));
 	
-	// ft_memmove(s2, s1, 3);
-	// printf("%s\n", s2);
+	
+	// printf("%s\n", memmove(s1, s2, 1));
+	// printf("%s\n", ft_memmove(s1, s2, 1));
 
-	//printf("%s", ft_memchr(s1, 'h', 6));
+	// printf("%s\n", memchr(s1, 'y', 6));
+	// printf("%s", ft_memchr(s1, 'y', 6));
 
-	//printf("%d", ft_memcmp(s1, s2, 6));
+	// printf("%d\n", memcmp(s1, s2, 6));
+	// printf("%d", ft_memcmp(s1, s2, 6));
 
 	//printf("%zu", ft_strlen(s1));
 

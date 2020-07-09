@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 12:30:59 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/01 12:53:35 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/07/09 13:36:51 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	size_t i;
 
 	i = 0;
-	while (((unsigned char *)s1)[i] == ((unsigned char *)s2)[i])
+	while (((unsigned char *)s1)[i] == ((unsigned char *)s2)[i] && i < n)
 	{
 		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
 			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
