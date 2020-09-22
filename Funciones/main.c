@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-//#include <xlocale.h>
+#include <xlocale.h>
 
 //void	*ft_memset(void *str, int c, size_t n);
 //void	ft_bzero(void *str, size_t n);
@@ -11,7 +11,7 @@
 //void	*ft_memmove(void *dest, const void *src, size_t n);
 //void	*ft_memchr(const void *str, int c, size_t n);
 //int	ft_memcmp(const void *s1, const void *s2, size_t n);
-size_t	ft_strlen(const char *str);
+//size_t	ft_strlen(const char *str);
 //char	*ft_strchr(const char *str, int c);
 //char	*ft_strrchr(const char *str, int c);
 //char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
@@ -24,13 +24,11 @@ size_t	ft_strlen(const char *str);
 //int	ft_isprint(int c);
 //int	ft_toupper(int c);
 //int	ft_tolower(int c);
-//char	*ft_strdup(const char *s1);
-char *ft_substr (char const *s, unsigned int start, size_t len);
 
 int main()
 {
-	char s1[49] = "Hola";
-	//char s2[40] = "ty";
+	char s1[49] = "";
+	char s2[40] = "ty";
 
 	// ft_memset(s1 + 5, '*', 5);
 	// printf("%s\n", s1);
@@ -94,12 +92,6 @@ int main()
 
 	// printf("%c\n", tolower('!'));
 	// printf("%c\n", ft_tolower('!'));
-
-	//printf("%s\n", ft_strdup(s1));
-	//printf("%s\n", strdup(s1));
-
-	printf("%s\n", ft_substr(s1, 2, 5));
-	printf("%s\n", ft_substr2(s1, 2, 5));
 
 	return 0;
 }

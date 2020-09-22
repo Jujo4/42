@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/22 12:31:21 by jsanchez          #+#    #+#             */
+/*   Updated: 2020/09/22 12:31:21 by jsanchez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -19,4 +31,3 @@ char *ft_substr (char const *s, unsigned int start, size_t len)
 	s2[i] = '\0';
 	return(s2);
 }
-
