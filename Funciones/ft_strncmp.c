@@ -6,14 +6,11 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/02 13:00:34 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/07 11:57:53 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/23 12:16:01 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

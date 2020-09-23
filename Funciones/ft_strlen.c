@@ -6,14 +6,11 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 13:02:13 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/01 13:29:43 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/23 12:16:08 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

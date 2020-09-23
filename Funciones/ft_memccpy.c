@@ -6,32 +6,22 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 11:34:32 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/09 11:57:17 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/23 12:12:50 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
-void	*ft_memccpy(void *restrict dest, const void *restrict src, int c, size_t n)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
 	size_t i;
 
 	i = 0;
-	while (i < n)
+	while (n--)
 	{
-		if (((char *)src)[i] == (unsigned char)c)
-		{
-			((char *)dest)[i] = ((char *)src)[i];
+		*(unsigned char *)dest++ = *(unsigned char *)src;
+		if (*(unsigned char *)src++ == (unsigned char)c)
 			return (dest);
-		}
-		else
-		{
-			((char *)dest)[i] = ((char *)src)[i];
-			i++;
-		}
 	}
 	return (NULL);
 }

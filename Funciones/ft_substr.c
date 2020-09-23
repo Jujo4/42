@@ -5,22 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/22 12:31:21 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/09/22 12:31:21 by jsanchez         ###   ########.fr       */
+/*   Created: 2020/09/23 12:14:42 by jsanchez          #+#    #+#             */
+/*   Updated: 2020/09/23 12:14:42 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
-char *ft_substr (char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t i;
-	char *s2;
+	size_t	i;
+	char	*s2;
 
-	if(!(s2 = (char *)malloc(len)))
+	if (!(s2 = (char *)malloc(len)))
 		return (NULL);
 	i = 0;
 	while (i < len)
@@ -29,5 +26,5 @@ char *ft_substr (char const *s, unsigned int start, size_t len)
 		i++;
 	}
 	s2[i] = '\0';
-	return(s2);
+	return (s2);
 }

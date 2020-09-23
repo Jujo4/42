@@ -6,20 +6,15 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 12:53:22 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/07 13:23:28 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/23 12:56:37 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
-	if ((unsigned char)c >= 48 && (unsigned char)c <= 57)
-	{
-		return (8);
-	}
+	if (c >= 48 && c <= 57)
+		return (c);
 	return (0);
 }

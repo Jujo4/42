@@ -6,14 +6,11 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/28 13:03:28 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/28 13:40:04 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/23 12:15:42 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -21,8 +18,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	z;
 	char	*s;
 
-	z = strlen(s1) - 1;
-	while (i < strlen(set))
+	z = ft_strlen(s1) - 1;
+	while (i < ft_strlen(set))
 	{
 		if (s1[z] == set[i])
 		{
@@ -36,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		}
 		i++;
 	}
-	if (!(s = malloc(sizeof(char) * strlen(s1) + 1)))
+	if (!(s = malloc(sizeof(char) * ft_strlen(s1) + 1)))
 		return (NULL);
 	return (s);
 }

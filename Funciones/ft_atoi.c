@@ -6,14 +6,11 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 11:52:46 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/07 12:36:18 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/23 12:13:28 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

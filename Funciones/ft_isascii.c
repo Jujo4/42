@@ -6,20 +6,15 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 13:12:47 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/07/07 13:23:32 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/23 12:58:18 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-	{
-		return (24);
-	}
+		return (1);
 	return (0);
 }
