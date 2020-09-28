@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/02 10:31:16 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/09/23 13:16:19 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/28 19:35:17 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@ char	*ft_strchr(const char *str, int c)
 {
 	while (*str != (unsigned char)c)
 	{
-		if (*str++ == '\0')
+		if (*str == '\0')
 			return (NULL);
+		str++;
 	}
 	return (str);
 }
