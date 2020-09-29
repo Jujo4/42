@@ -6,13 +6,13 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 12:07:24 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/09/28 21:39:49 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/29 13:37:12 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	str_count(const char *s, char c)
+static int	str_cont(const char *s, char c)
 {
 	size_t	i;
 	size_t	sc;
@@ -30,18 +30,51 @@ static int	str_count(const char *s, char c)
 	sc++;
 	return (sc);
 }
-static char	*ms(const char *s, char c)
+
+static char	*cpy(const char *s, char c)
 {
 	char	*str;
 	size_t	i;
 
 	i = 0;
-	while (s[i] != c || s)
+	while (s[i] != c && s[i])
 		i++;
-	if(!(str = malloc(sizeof(char) * (i + 1))))
-		retuurn (NULL);
+	if (!(str = (char *)malloc(sizeof(char) * (i + 1))))
+		return (NULL);
 	i = 0;
-
+	while (s[i] && s[i] != c)
+	{
+		str[i] = s[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
-char		**ft_split(char const *s, char c)
 
+char		**ft_split(char const *s, char c)
+{
+	char	**tab;
+	size_t	num;
+	size_t	i;
+
+	i = 0;
+	if (!s)
+		return (NULL);
+	num = str_cont(s, c);
+	if (!(tab = (char **)malloc(sizeof(char *) * (num + 1))))
+		return (NULL);
+	while (*s)
+	{
+		while (*s && *s == c)
+			s++;
+		if (*s && *s != c)
+		{
+			tab[i] = cpy(s, c);
+			i++;
+			while (*s && *s != c)
+				s++;
+		}
+	}
+	tab[i] = '\0';
+	return (tab);
+}

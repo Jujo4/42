@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/28 13:03:28 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/09/28 20:03:15 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/09/29 12:07:34 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	len;
-	char *	s;	
+	char	*s;
 
 	if (!s1 || !set)
 		return (NULL);
@@ -29,4 +29,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s = ft_substr(s1, 0, len + 1);
 	return (s);
 }
-
