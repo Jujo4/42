@@ -2,15 +2,13 @@
 
 void ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
+	if (!s)
+		return ;
+	while (*s)
 	{
-		write (fd, &s[i], 1);
-		i++;
-		if (s[i] == '\0')
-			write (fd, '/n', 1);
-	}
+		write (fd, s, 1);
+		s++;
+	}		
+	write (fd, "\n", 1);
 }
 
