@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static size_t count(long nb)
+static size_t	count(long nb)
 {
 	size_t cnt;
 
@@ -35,7 +35,7 @@ static size_t count(long nb)
 	return (cnt);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	long num;
 	size_t len;
@@ -61,4 +61,3 @@ char *ft_itoa(int n)
 	}
 	return (str);
 }
-

@@ -32,4 +32,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	s1[i] = '\0';
 	return (s1);
 }
-
