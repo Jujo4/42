@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 12:14:42 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/09/28 19:08:46 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/21 20:27:12 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	s1[i] = '\0';
 	return (s1);
 }
+
