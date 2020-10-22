@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 00:11:55 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/10/22 00:11:55 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/22 19:49:13 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,15 @@ static size_t	count(long nb)
 	return (cnt);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	long num;
-	size_t len;
-	char *str;
+	long	num;
+	size_t	len;
+	char	*str;
 
 	num = n;
 	len = count(num);
-	if(!(str = (char *)malloc(sizeof(char) * len + 1)))
+	if (!(str = (char *)malloc(sizeof(char) * len + 1)))
 		return (NULL);
 	str[len--] = '\0';
 	if (num == 0)
