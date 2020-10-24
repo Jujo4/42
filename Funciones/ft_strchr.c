@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 00:20:26 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/10/22 21:02:32 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/24 19:10:51 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ char	*ft_strchr(const char *str, int c)
 			return (NULL);
 		str++;
 	}
-	return (str);
+	return ((char *)str);
 }

@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 00:13:39 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/10/22 21:06:06 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/24 19:07:46 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			n--;
 		}
 	}
-	return (NULL);
+	return (0);
 }

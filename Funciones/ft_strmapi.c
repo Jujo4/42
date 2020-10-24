@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 00:23:52 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/10/22 20:31:19 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/24 19:59:19 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (s[i] != '\0')
 	{
-		str[i] = f(s[i], i);
+		str[i] = f(i, s[i]);
 		i++;
 	}
 	str[i] = '\0';
