@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/28 13:00:45 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/09/27 21:08:49 by jsanchez         ###   ########.fr       */
+/*   Created: 2020/10/22 00:21:31 by jsanchez          #+#    #+#             */
+/*   Updated: 2020/10/22 20:46:35 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
-{	
+{
 	char	*s;
 	size_t	i;
 

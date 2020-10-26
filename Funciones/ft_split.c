@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/22 12:07:24 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/09/29 13:37:12 by jsanchez         ###   ########.fr       */
+/*   Created: 2020/10/22 00:19:58 by jsanchez          #+#    #+#             */
+/*   Updated: 2020/10/24 18:59:29 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,6 @@ char		**ft_split(char const *s, char c)
 				s++;
 		}
 	}
-	tab[i] = '\0';
+	tab[i] = 0;
 	return (tab);
 }
