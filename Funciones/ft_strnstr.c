@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 00:24:57 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/10/26 01:13:49 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/26 13:03:52 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			if (needle[j] == '\0')
 				return ((char *)haystack + i);
 		}
+		j = 0;
 		i++;
 	}
 	return (NULL);
