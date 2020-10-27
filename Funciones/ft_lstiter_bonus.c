@@ -6,7 +6,7 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/26 18:44:43 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/10/26 18:57:01 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/27 20:47:49 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
 		return ;
-	while (*lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

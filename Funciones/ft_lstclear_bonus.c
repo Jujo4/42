@@ -6,17 +6,17 @@
 /*   By: jsanchez <jsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/26 18:28:52 by jsanchez          #+#    #+#             */
-/*   Updated: 2020/10/26 18:42:08 by jsanchez         ###   ########.fr       */
+/*   Updated: 2020/10/27 20:43:22 by jsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	if (!lst || !del)
 		return ;
-	while (*lst)
+	while (lst)
 	{
 		del((*lst)->content);
 		free(*lst);
